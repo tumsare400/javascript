@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+    <script>
+      var resultvar = "";
+      var mixedarray1 = ["payal", "tumsare", "hello"];
+      var mixedarray2 = ["shrikant", "tumsare"];
+
+      resultvar+= "<br> slice = "+mixedarray1.slice(1);
+      document.write(resultvar);
+
+      resultvar+= "<br><br> join = "+mixedarray1.join("//");
+    
+
+
+      mixedarray1.push("hi");
+      resultvar+= "<br><br> push = "+mixedarray1;
+     
+
+
+      mixedarray1.pop();
+      resultvar+= "<br> <br>pop = "+mixedarray1;
+      
+
+
+      mixedarray1.splice(2,0,"programming","language");
+      resultvar+= "<br><br> splice add = "+mixedarray1;
+    
+
+
+      mixedarray1.splice(0,1);
+      resultvar+= "<br><br> splice remove = "+mixedarray1;
+     
+
+
+     function isAllString(val){
+         return typeof(val)=="string";
+     }
+     resultvar+="<br> <br>every method="+mixedarray1.every(isAllString);
+     document.write("<br> every="+resultvar);
+
+     mixedarray1.forEach(function(arrayEle, index){
+
+        document.write("<br> arrayele="+arrayEle);
+        document.write("<br> arrayele="+index+"<br>");
+     });
+
+     function displayArraydata(ele){
+        document.write("<br> ele="+ele);
+     }
+     mixedarray1.forEach(displayArraydata);
+     
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>

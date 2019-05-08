@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>String Methods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+   
+    <script>
+            var str = "PAYAL M TUMSARE";
+            var result = "";
+            result+= "substr(0)="+str.substr(0);
+            result+= "<br> substr(3)="+str.substr(3);
+            result+= "<br> substr(3,6)="+str.substr(3,6);
+            result+= "<br> substr(3, str.length-5)="+str.substr(3,str.length-5);
+            result+= "<br> substr(0,4)="+str.substring(0,4);
+            result+= "<br> substr(2,6)="+str.slice(2,6);
+            result+= "<br> tostring()="+str.toString();
+           
+            document.write(result);
+        </script>
+</head>
+<body>
+    <div id="strmethod"></div><br>
+   
+</body>
+</html>
